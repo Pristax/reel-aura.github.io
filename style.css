@@ -1,0 +1,145 @@
+body{
+	text-align: center;
+	font-family: Arial, sans-serif;
+	background-color: #222;
+	color: white;
+}
+
+h1{
+	font-size: 100px;
+	font-weight: bold;
+	color: gold;
+	text-shadow: 3px 3px 10px rgba(0, 0, 0, 1),
+	0px 0px 20px rgba(0, 0, 0, 0.8);
+	text-align: center;
+	margin: 20px 0;
+	letter-spacing: 3px;
+}
+
+#slot-machine-1{
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+@keyframes spin{
+	0% { transform: translateY(0); }
+	50% { transfrom: translateY(-30px); }
+	100% { transfrom: translateY(0); }
+}
+
+.slot{
+	width: 120px;
+	height: 120px;
+	font-size: 80px;
+	text-align: center;
+	border: 2px solid gold;
+	background-color: black;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: none;
+}
+
+button{
+	padding: 10px 20px;
+	font-size: 16px;
+	background-color: gold;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: darkgoldenrod;
+}
+
+label {
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	margin-right: 10px;
+}
+
+#bet{
+	background-color: gold;
+	border: 2px solid #333;
+	font-size: 18px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: black;
+}
+
+#bet:hover{
+	background-color: orange;
+}
+
+#bet:focus{
+	outline: none;
+	border-color: red;
+}
+
+#message{
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+}
+
+#info-btn{
+	background-color: darkblue;
+	color: white;
+	font-size: 18px;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 10px;
+	transition: 0.3s;
+}
+
+#info-brn:hover{
+	background-color: royalblue;
+}
+
+#info-popup{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: black;
+	padding: 20px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	text-align: center;
+}
+
+#info-popup h2{
+	color: darkred;
+}
+
+#close-info{
+	background-color: red;
+	color: white;
+	font-size: 16px;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#close-info:hover{
+	background-color: darkred;
+}
+
+.made{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 20px;
+}

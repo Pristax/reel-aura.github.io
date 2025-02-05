@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reel Aura</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<h1>Reel Aura</h1>
+	<p>Kredit: <span id="credits">1000</span></p>
+	
+	<div id="slot-machine-1">
+		<div class="slot" id="slot1">🍒</div>
+		<div class="slot" id="slot2">🍋</div>
+		<div class="slot" id="slot3">7️⃣</div>
+	</div>
+		
+	<button id="reset">Restartovat kredit</button>
+	<button id="spin">SPIN</button>
+	<button id="autospin">Spustit Autospin</button>
+	<p id="message"></p><br>
+	
+	<label for="bet">Sázka:</label>
+	<select id="bet">
+		<option value="10">10</option>
+		<option value="20">20</option>
+		<option value="50">50</option>
+		<option value="100">100</option>
+	</select>
+	
+	<button id="info-btn">ℹ️ Informace</button>
+	<div id="info-popup" class="hidden">
+		<h2>Jak fungují výhry?</h2>
+		<p>🎰 Pokud padnou 3 stejné symboly, vyhráváš podle sázky:</p>
+		<ul>
+			<li>🍒🍒🍒 - sázka * 5</li>
+			<li>🍋🍋🍋 - sázka * 5</li>
+			<li>🍊🍊🍊 - sázka * 5</li>
+			<li>🍉🍉🍉 - sázka * 5</li>
+			<li>7️⃣7️⃣7️⃣ - sázka * 10</li>
+		</ul>
+		<p>💰 Pokud nepadnou 3 stené symbol, nevyhráváš nic.</p>
+		<button id="close-info">Zavřít</button>
+	</div>
+	<p class="made">By Pristax</p>
+	
+	<script src="script.js"></script>
+</body>
+</html>
